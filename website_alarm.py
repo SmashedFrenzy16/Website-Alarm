@@ -8,6 +8,13 @@ url = input("Enter URL you want to open when the alarm goes off: ")
 real_time = time.strftime("%I:%M:%S")
 
 while real_time != alarm_set:
-    print ("The time is " + real_time)
+    print("The time is: " + real_time)
     Actual_Time = time.strftime("%I:%M:%S")
     time.sleep(1)
+    
+
+if real_time == alarm_set:
+    
+    print("Here is the website!")
+    
+    webbrowser.open(url)
